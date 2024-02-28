@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Wheel Evaluation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Wellness Wheel Evaluation</h1>
+    <form id="evaluationForm">
+        <!-- Pillar 1: Physical Wellness -->
+        <div class="pillar">
+            <h2>Physical Wellness</h2>
+            <label for="physicalSatisfaction">How satisfied are you with your physical wellness (1-10)?</label>
+            <input type="number" id="physicalSatisfaction" name="physicalSatisfaction" min="1" max="10" required>
+            <p>Do you make time for physical activity?</p>
+            <input type="number" id="physicalActivity" name="physicalActivity" min="1" max="10" required>
+            <label for="nourishingFood">Do you prioritise nourishing your body with the food it needs to thrive?</label>
+            <input type="number" id="nourishingFood" name="nourishingFood" min="1" max="10" required>
+            <label for="drinkWater">Do you drink enough water?</label>
+            <input type="number" id="drinkWater" name="drinkWater" min="1" max="10" required>
+        </div>
+
+        <!-- Pillar 2: Emotional Wellness -->
+        <div class="pillar">
+            <h2>Emotional Wellness</h2>
+            <label for="emotionalSatisfaction">How satisfied are you with your emotional wellness (1-10)?</label>
+            <input type="number" id="emotionalSatisfaction" name="emotionalSatisfaction" min="1" max="10" required>
+            <p>Do you manage stress well?</p>
+            <input type="number" id="manageStress" name="manageStress" min="1" max="10" required>
+            <label for="joyHappiness">Do you prioritise joy and happiness?</label>
+            <input type="number" id="joyHappiness" name="joyHappiness" min="1" max="10" required>
+            <label for="expressYourself">Do you find you express yourself often?</label>
+            <input type="number" id="expressYourself" name="expressYourself" min="1" max="10" required>
+        </div>
+
+        <!-- Pillar 3: Mental/Intellectual Wellness -->
+        <div class="pillar">
+            <h2>Mental/Intellectual Wellness</h2>
+            <label for="mentalSatisfaction">How satisfied are you with your Mental/Intellectual wellness (1-10)?</label>
+            <input type="number" id="mentalSatisfaction" name="mentalSatisfaction" min="1" max="10" required>
+            <p>What do you do to engage your mind and learn?</p>
+            <input type="number" id="engageMind" name="engageMind" min="1" max="10" required>
+            <label for="problemSolving">How do you approach problem-solving and creativity?</label>
+            <input type="number" id="problemSolving" name="problemSolving" min="1" max="10" required>
+            <label for="learnNewThings">Do you make time to learn new things?</label>
+            <input type="number" id="learnNewThings" name="learnNewThings" min="1" max="10" required>
+        </div>
+
+        <!-- Pillar 4: Social Wellness -->
+        <div class="pillar">
+            <h2>Social Wellness</h2>
+            <label for="socialSatisfaction">How satisfied are you with your social wellness (1-10)?</label>
+            <input type="number" id="socialSatisfaction" name="socialSatisfaction" min="1" max="10" required>
+            <p>Do you maintain positive relationships with others?</p>
+            <input type="number" id="positiveRelationships" name="positiveRelationships" min="1" max="10" required>
+            <label for="engageSocialActivities">Do you actively engage in social activities and connect with your community?</label>
+            <input type="number" id="engageSocialActivities" name="engageSocialActivities" min="1" max="10" required>
+            <label for="effectiveCommunication">Do you communicate effectively with those around you?</label>
+            <input type="number" id="effectiveCommunication" name="effectiveCommunication" min="1" max="10" required>
+        </div>
+
+        <!-- Pillar 5: Spiritual Wellness -->
+        <div class="pillar">
+            <h2>Spiritual Wellness</h2>
+            <label for="spiritualSatisfaction">How satisfied are you with your spiritual wellness (1-10)?</label>
+            <input type="number" id="spiritualSatisfaction" name="spiritualSatisfaction" min="1" max="10" required>
+            <p>Do you feel a sense of purpose and meaning in your life?</p>
+            <input type="number" id="purposeMeaning" name="purposeMeaning" min="1" max="10" required>
+            <label for="spiritualPractices">Do you engage in practices that nurture your spiritual well-being?</label>
+            <input type="number" id="spiritualPractices" name="spiritualPractices" min="1" max="10" required>
+            <label for="personalValuesBeliefs">Are your actions aligned with your personal values and beliefs?</label>
+            <input type="number" id="personalValuesBeliefs" name="personalValuesBeliefs" min="1" max="10" required>
+        </div>
+
+        <!-- Pillar 6: Occupational Wellness -->
+        <div class="pillar">
+            <h2>Occupational Wellness</h2>
+            <label for="occupationalSatisfaction">How satisfied are you with your occupational wellness (1-10)?</label>
+            <input type="number" id="occupationalSatisfaction" name="occupationalSatisfaction" min="1" max="10" required>
+            <p>Do you find your career or occupation fulfilling and aligned with your goals?</p>
+            <input type="number" id="careerFulfillment" name="careerFulfillment" min="1" max="10" required>
+            <label for="workLifeBalance">Are you satisfied with your work-life balance?</label>
+            <input type="number" id="workLifeBalance" name="workLifeBalance" min="1" max="10" required>
+            <label for="careerGrowth">Do you actively seek opportunities for career growth and development?</label>
+            <input type="number" id="careerGrowth" name="careerGrowth" min="1" max="10" required>
+        </div>
+
+        <!-- Pillar 7: Environmental Wellness -->
+        <div class="pillar">
+            <h2>Environmental Wellness</h2>
+            <label for="environmentalSatisfaction">How satisfied are you with your environmental wellness (1-10)?</label>
+            <input type="number" id="environmentalSatisfaction" name="environmentalSatisfaction" min="1" max="10" required>
+            <p>Are your daily practices environmentally friendly and sustainable?</p>
+            <input type="number" id="environmentalPractices" name="environmentalPractices" min="1" max="10" required>
+            <label for="reduceImpact">Do you take responsibility for reducing your environmental impact?</label>
+            <input type="number" id="reduceImpact" name="reduceImpact" min="1" max="10" required>
+            <label for="connectedNature">Are you connected to and appreciative of your natural surroundings?</label>
+            <input type="number" id="connectedNature" name="connectedNature" min="1" max="10" required>
+        </div>
+
+        <!-- Pillar 8: Financial Wellness -->
+        <div class="pillar">
+            <h2>Financial Wellness</h2>
+            <label for="financialSatisfaction">How satisfied are you with your financial wellness (1-10)?</label>
+            <input type="number" id="financialSatisfaction" name="financialSatisfaction" min="1" max="10" required>
+            <p>Do you effectively manage your finances and budget?</p>
+            <input type="number" id="manageFinances" name="manageFinances" min="1" max="10" required>
+            <label for="preparedExpenses">Do you feel prepared for unexpected expenses?</label>
+            <input type="number" id="preparedExpenses" name="preparedExpenses" min="1" max="10" required>
+            <label for="financialFreedom">Do you feel that your finances give you the freedom to live the life you dream of?</label>
+            <input type="number" id="financialFreedom" name="financialFreedom" min="1" max="10" required>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="wellnessWheel">
+        <!-- Wellness wheel will be displayed here -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
